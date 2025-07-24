@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rimsential - Spaceports (Continued)</name>
+	<author>Zaljerem</author>
+	<packageId>zal.spaceports</packageId>
+	<supportedVersions>	
+	<li>1.5</li>
+	<li>1.6</li>
+  </supportedVersions>
+<modVersion IgnoreIfNoMatchingField="True">1.1.1</modVersion>
+  <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+          <packageId>Ludeon.RimWorld.Royalty</packageId>
+          <displayName>Rimworld Royalty</displayName>
+          <downloadUrl>https://store.steampowered.com/app/1149640/RimWorld__Royalty/?curator_clanid=25160263</downloadUrl>
+        </li>
+  </modDependencies>
+<loadAfter>
+<li>OskarPotocki.VFE.Deserters</li>
+<li>Azazellz.TransportShuttleStandalone</li>
+<li>VanillaExpanded.VFEPropsandDecor</li>
+<li>kentington.saveourship2</li>
+</loadAfter>
+  <description>
+Original mod by SomewhereOutInSpace/Orpheusly
+https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215
+MIT License
+All the same - if the original author requests it, I will remove this update.
+
+--
+
+"Okay, showtime!"
+
+The classic is back for 1.5!
+
+I've added my notes to the original mod notes below. PLEASE READ THEM CAREFULLY IF YOU INTEND TO USE THIS MOD.
+
+I mean it, read them! I've detailed everything known so far.
+
+
+"We pray for one last landing
+On the globe that gave us birth;
+Let us rest our eyes on the fleecy skies
+And the cool, green hills of Earth."
+
+--
+
+Original mod notes (1.4) with annotations:
+
+"For I dipped into the future, far as human eye could see, Saw the Vision of the world, and all the wonder that would be.
+Saw the heavens fill with commerce, argosies of magic sails, Pilots of the purple twilight dropping down with costly bales..."
+
+A mod for filling the heavens above your colony with commerce. Build landing pads and welcome a steady stream of shuttles carrying visitors, traders and guests. Be warned, however, for not everyone who picks up your signal will be friendly...
+
+*Features*
+Build your own spaceport and breathe some life into your colony! Visitors, traders and other groups will land at your colony on regular intervals.
+Make a profit by producing and selling fuel to visiting shuttles.
+Six new high-risk, high-reward spaceport-centric incidents and game conditions!
+Useful integrations with many other mods like SOS2 and Hospitality.
+
+[SOS2 integration is obviously not tested yet. I have tested Hospitality against the in-progress version from their github and all seems to be well.]
+
+Hire a shuttle for a one-way trip. [This is "fixed", in that you can now taxi to world sites. It will throw an error, but it won't destroy your pawns and you can continue as normal. I am working on this, but I didn't want to delay release over it.]
+
+
+*Details*
+Spaceport structures are unlocked via the Microelectronics research node, and can be found in the Misc tab of the Architect.
+Build a spaceport beacon and any number of landing pads. Shuttles will begin to arrive soon after!
+Landing pads can be configured via their toolbar to only allow certain classes of shuttle. Shuttles will only land if they can find a pad open to their class.
+By default, all groups will linger just outside their shuttle. You can place configurable chillspots to control the flow of groups by class - any newly arrived parties will automatically lock on to the closest valid spot.
+You have limited control over shuttles at your port. Using their toolbar, you can force them to depart immediately, or recall their owning party and then depart. Spaceport beacons can also give the same orders to all shuttles on a map.
+
+[I've added more shuttle textures for better variety. They're hardcoded, so if you must, replace textures, don't remove.]
+
+
+*New events*
+Spaceports adds six new events, described below. These can be disabled globally or individually in mod settings.
+
+Kessler Syndrome - a debris cascade sweeps through the local orbital space, making shuttle travel impossible. Lasts from a single season to over a year. (Note: some exceptions do exist for quality of life purposes - e.g. Royalty quest shuttles are unaffected, so you can still have bestowings done.)
+
+[It should no longer be possible for this condition to be permanent.]
+
+Interstellar Derelict - a damaged shuttle detaches from a derelict interstellar ship and begs to land at your colony. They promise a reward, but their drive reactor is unstable and could go up at an inopportune time...
+
+Shuttle Medevac - a medevac shuttle with a critically wounded patient on board and not enough time to get to one of their own faction bases needs your help! They can't promise a reward, but they swear they'll do what they can...
+
+Mysterious Cargo - a transponder-less shuttle is approaching your port. You think it might have valuable cargo aboard, but it could also be something less pleasant...
+
+Prisoner transfer - a friendly faction is looking to offload some prisoners, one batch from a low-security facility and one from a high-security facility. They'll pay you appropriately, but the prisoners will be your problem from there on out.
+
+Professional Help - a friendly faction is looking to borrow one of your more skilled pawns for a risky job. They'll pay quite well, but they can't guarantee the volunteer's continued health... (Note: this event won't ever kill your pawn outright, but they can still be crippled by it.)
+
+
+*Fuel production and sale*
+The fuel system is based around three buildings: a fusion fuel processor, tank and terminal, all gated behind the Fabrication research node.
+Fuel processors require 150 plasteel plus 5 advanced components. They consume a kilowatt of power and 150 chemfuel per day to produce fusion fuel; the amount produced depends on the processor's mode. When placed in water (or linked to DBH plumbing) processors will run "wet," producing at full capacity. If built on dry land without a plumbing link, they'll instead run "dry," producing one-third the fuel for the same chemfuel and power cost.
+Fuel tanks require 75 plasteel plus 2 advanced components. They hold up to 1000 units of fuel and require 100w of power to chill their contents; if they are unpowered, the fuel inside will begin to evaporate away.
+Fuel terminals require 25 plasteel and 3 industrial components. They must be placed adjacent to a landing pad and be powered to sell fuel. Important: for terminals to draw fuel from tanks, they must be on the same power network.
+
+[Fixed a bug where the fuel tanks would show a negative amount of fuel. This whole system now seems to be working as expected. Testing its integration with various mods is needed as noted below.]
+
+
+*Integrations*
+Regular shuttles from Royalty will try to land on spaceport pads if possible. [Working]
+
+If you have Orion's Hospitality installed, a configurable percentage of guests (found in the second page of mod settings) will arrive and depart via shuttle. [Tested against 1.5 Hospitality from their github, Working]
+
+Save Our Ship 2 - Landing pads work under ship roofs, and shuttles will phase through ship roofs to land without causing vacuum exposure. All shuttle passengers landing on ships will wear EVA gear. If you also have Hospitality installed, guest shuttles can land on ships. [Untested]
+
+Trader Ships - trader ships will try to land on spaceport pads if possible. [Working]
+[Rim-Effect Themis Traders - uses the same code as Trader Ships, but not updated: Untested]
+
+Rimefeller - chemfuel pipes can directly supply fuel processors. [Possibly VCE also? Untested]
+
+Dubs Bad Hygiene - Fuel processors on dry land can draw water from plumbing to fuel wet mode. [Untested]
+
+N.b. due to the limitations inherent in using DBH code without requiring it as a dependency, this integration incurs a tiny but still statistically significant performance penalty for each processor on dry land. I didn't notice any appreciable lag in testing, but if you're having issues, the integration can be disabled in settings.
+
+
+*FAQ*
+"Why the Royalty requirement?" This mod extends on CompShuttle and the ShipJob system, which require the Royalty expansion to work, both technically and legally.
+"What's the point?" or "Isn't this kind of unbalanced?" The primary purpose of this mod (as set out by the commissioner) is to amp up the ambience of your colony. If you're concerned about gameplay or balance impact, everything is meant to be configurable from mod settings, including shuttle arrival frequency, events, caps, et cetera.
+
+
+Attributions:
+Original mod by SomewhereOutInSpace/Orpheusly, later supported by Taggerung
+Most building art was graciously made by jeonggihun!
+Airship texture by AOBA (used with permission)
+BSG Raptor texture by Capi (content free-to-use)
+Rimefeller compatibility patch was written by Broms.
+</description>
+</ModMetaData>

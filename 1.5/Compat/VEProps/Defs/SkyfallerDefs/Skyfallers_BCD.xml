@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleB_Incoming</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/Albatross/Albatross_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+  <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleC_Incoming</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/Skip/Skip_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleD_Incoming</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/SpacerShuttle/SpacerShuttle_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleB_Leaving</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/Albatross/Albatross_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleC_Leaving</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/Skip/Skip_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleD_Leaving</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/SpacerShuttle/SpacerShuttle_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+</Defs>

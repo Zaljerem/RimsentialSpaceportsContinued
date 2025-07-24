@@ -1,0 +1,24 @@
+1.0.0 - 4/14/2024 - updated from 1.4 to 1.5
+
+1.0.1 - 4/17/2024 - VFE Deserter shuttles will now use pads
+
+1.0.2 - 4/17/2024 - fix to hired shuttle issue
+
+1.0.3 - 4/17/2024 - included source
+
+1.0.4 - 4/18/2024 - fixes to hired shuttle, added ShuttleComm and archotech shuttle creator
+
+1.0.5 - 4/18/2024 - fix to ShuttleComm use sound, added mod icon
+
+1.0.6 - 4/20/2024 - compatibility with Standalone Transport Shuttle, fix to archotech shuttle creator
+
+1.0.7 - 4/30/2024 - additional textures, backstory, VE Props support
+
+1.0.8 - 5/1/2024 - major changes to kessler syndrome map condition, increased chance to end early, etc. Additional patch for SOS2
+
+1.0.9 - 4/22/2025 - updated to 1.6
+
+1.1.0 - 6/16/2025 - fix in preparation for Hospitality (Continued)
+
+1.1.1 - 6/21/2025 - minor fix in preparation for Hospitality (Continued)
+

@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|f:\\microsoft visual studio\\repos\\!priority\\spaceports\\sharputils\\sharputils\\sharptracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|solutionrelative:sharputils\\sharptracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|f:\\microsoft visual studio\\repos\\!priority\\spaceports\\sharputils\\sharputils\\sharppawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|solutionrelative:sharputils\\sharppawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|f:\\microsoft visual studio\\repos\\!priority\\spaceports\\sharputils\\sharputils\\sharpgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|solutionrelative:sharputils\\sharpgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|f:\\microsoft visual studio\\repos\\!priority\\spaceports\\sharputils\\sharputils\\sharpanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF2570C-E20D-404D-90F4-480F7221695D}|SharpUtils.csproj|solutionrelative:sharputils\\sharpanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SharpTracking.cs",
+              "DocumentMoniker": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpTracking.cs",
+              "RelativeDocumentMoniker": "SharpUtils\\SharpTracking.cs",
+              "ToolTip": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpTracking.cs",
+              "RelativeToolTip": "SharpUtils\\SharpTracking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:46.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SharpGen.cs",
+              "DocumentMoniker": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpGen.cs",
+              "RelativeDocumentMoniker": "SharpUtils\\SharpGen.cs",
+              "ToolTip": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpGen.cs",
+              "RelativeToolTip": "SharpUtils\\SharpGen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:41.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SharpPawn.cs",
+              "DocumentMoniker": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpPawn.cs",
+              "RelativeDocumentMoniker": "SharpUtils\\SharpPawn.cs",
+              "ToolTip": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpPawn.cs",
+              "RelativeToolTip": "SharpUtils\\SharpPawn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:40.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SharpAnim.cs",
+              "DocumentMoniker": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpAnim.cs",
+              "RelativeDocumentMoniker": "SharpUtils\\SharpAnim.cs",
+              "ToolTip": "F:\\Microsoft Visual Studio\\Repos\\!Priority\\Spaceports\\SharpUtils\\SharpUtils\\SharpAnim.cs",
+              "RelativeToolTip": "SharpUtils\\SharpAnim.cs",
+              "ViewState": "AQIAACgBAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:19.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

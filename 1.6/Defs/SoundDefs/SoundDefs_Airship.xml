@@ -1,0 +1,56 @@
+<Defs>
+
+  <SoundDef>
+    <defName>Spaceports_AirshipAmbiance</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Idle_Airship</clipPath>
+          </li>
+        </grains>
+        <volumeRange>100</volumeRange>
+        <distRange>10~30</distRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+  <SoundDef>
+    <defName>Spaceports_LandingAirship</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Landing_Airship</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40~40</volumeRange>
+        <tempoAffectedByGameSpeed>false</tempoAffectedByGameSpeed>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+  <SoundDef>
+    <defName>Spaceports_LeavingAirship</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Takeoff_Airship</clipPath>
+          </li>
+        </grains>
+        <volumeRange>30~30</volumeRange>
+        <tempoAffectedByGameSpeed>false</tempoAffectedByGameSpeed>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<BackstoryDef>
+		<defName>Spaceports_ShuttlePilot</defName>
+		<slot>Adulthood</slot>
+		<title>Shuttle pilot</title>
+		<titleShort>Pilot</titleShort>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<description>A natural pilot, [PAWN_nameDef] has flown shuttles and other craft through the most perilous conditions imaginable. [PAWN_pronoun] is unflappable, has been around the block, and is always ready to throw down in a bar brawl - or socialize with roughnecks and glitterati alike.</description>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>4</Melee>
+			<Social>3</Social>
+			<Crafting>-2</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>Offworld</li>
+      			<li>ImperialCommon</li>
+      			<li>Outlander</li>
+			<li>Pirate</li>			
+		</spawnCategories>
+		<disallowedTraits>
+			<Psychopath>0</Psychopath>
+		</disallowedTraits>
+		 <possessions>
+      <Apparel_ShuttleComm>1</Apparel_ShuttleComm>
+    </possessions>
+	</BackstoryDef>
+
+</Defs>

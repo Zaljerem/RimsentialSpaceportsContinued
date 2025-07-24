@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleB</defName>
+    <graphicData>
+      <texPath>Buildings/Shuttles/ShuttleB</texPath>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

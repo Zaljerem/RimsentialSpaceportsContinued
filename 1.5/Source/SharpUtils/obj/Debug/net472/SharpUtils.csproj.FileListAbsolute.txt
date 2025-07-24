@@ -1,0 +1,7 @@
+F:\Microsoft Visual Studio\Repos\!Priority\Spaceports\SharpUtils\bin\Debug\net472\SharpUtils.dll
+F:\Microsoft Visual Studio\Repos\!Priority\Spaceports\SharpUtils\bin\Debug\net472\SharpUtils.pdb
+F:\Microsoft Visual Studio\Repos\!Priority\Spaceports\SharpUtils\obj\Debug\net472\SharpUtils.csproj.AssemblyReference.cache
+F:\Microsoft Visual Studio\Repos\!Priority\Spaceports\SharpUtils\obj\Debug\net472\SharpUtils.GeneratedMSBuildEditorConfig.editorconfig
+F:\Microsoft Visual Studio\Repos\!Priority\Spaceports\SharpUtils\obj\Debug\net472\SharpUtils.csproj.CoreCompileInputs.cache
+F:\Microsoft Visual Studio\Repos\!Priority\Spaceports\SharpUtils\obj\Debug\net472\SharpUtils.dll
+F:\Microsoft Visual Studio\Repos\!Priority\Spaceports\SharpUtils\obj\Debug\net472\SharpUtils.pdb

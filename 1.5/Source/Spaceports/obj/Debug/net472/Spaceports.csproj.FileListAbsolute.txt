@@ -1,0 +1,14 @@
+F:\Microsoft Visual Studio\Repos\!Broken15\Spaceports\Spaceports\bin\Debug\net472\Spaceports.dll
+F:\Microsoft Visual Studio\Repos\!Broken15\Spaceports\Spaceports\bin\Debug\net472\Spaceports.pdb
+F:\Microsoft Visual Studio\Repos\!Broken15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.csproj.AssemblyReference.cache
+F:\Microsoft Visual Studio\Repos\!Broken15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.GeneratedMSBuildEditorConfig.editorconfig
+F:\Microsoft Visual Studio\Repos\!Broken15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.csproj.CoreCompileInputs.cache
+F:\Microsoft Visual Studio\Repos\!Broken15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.dll
+F:\Microsoft Visual Studio\Repos\!Broken15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.pdb
+F:\Microsoft Visual Studio\Repos\!Working15\Spaceports\Spaceports\bin\Debug\net472\Spaceports.dll
+F:\Microsoft Visual Studio\Repos\!Working15\Spaceports\Spaceports\bin\Debug\net472\Spaceports.pdb
+F:\Microsoft Visual Studio\Repos\!Working15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.csproj.AssemblyReference.cache
+F:\Microsoft Visual Studio\Repos\!Working15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.GeneratedMSBuildEditorConfig.editorconfig
+F:\Microsoft Visual Studio\Repos\!Working15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.csproj.CoreCompileInputs.cache
+F:\Microsoft Visual Studio\Repos\!Working15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.dll
+F:\Microsoft Visual Studio\Repos\!Working15\Spaceports\Spaceports\obj\Debug\net472\Spaceports.pdb

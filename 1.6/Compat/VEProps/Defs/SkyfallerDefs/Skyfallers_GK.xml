@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleG_Incoming</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/Shuttle_HeavyCargo/Shuttle_HeavyCargo_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleK_Incoming</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/HeavyDropship/HeavyDropship_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+<ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleG_Leaving</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/Shuttle_HeavyCargo/Shuttle_HeavyCargo_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleK_Leaving</defName>
+        <graphicData>
+          <texPath>Things/Building/Spaceships/HeavyDropship/HeavyDropship_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+</Defs>

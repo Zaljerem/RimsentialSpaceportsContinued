@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>	
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="Ludeon.Rimworld.Biotech">1.5/Compat/Biotech</li>
+		<li IfModActive="VanillaExpanded.VFEPropsandDecor">1.5/Compat/VEProps</li>
+		<li IfModActive="kentington.saveourship2">1.5/Compat/SOS2</li>
+	</v1.5>	
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="Ludeon.Rimworld.Biotech">1.6/Compat/Biotech</li>
+		<li IfModActive="VanillaExpanded.VFEPropsandDecor">1.6/Compat/VEProps</li>
+		<li IfModActive="kentington.saveourship2">1.6/Compat/SOS2</li>
+	</v1.6>	
+</loadFolders>

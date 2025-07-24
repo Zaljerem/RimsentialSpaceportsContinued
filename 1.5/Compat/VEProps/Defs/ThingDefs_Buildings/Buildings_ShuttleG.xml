@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleG</defName>
+    <graphicData>
+      <texPath>Things/Building/Spaceships/Shuttle_HeavyCargo/Shuttle_HeavyCargo_east</texPath>
+	<drawSize>(5,5)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

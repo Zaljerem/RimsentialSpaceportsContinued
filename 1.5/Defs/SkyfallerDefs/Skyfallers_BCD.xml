@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleB_Incoming</defName>
+        <graphicData>
+          <texPath>Buildings/Shuttles/ShuttleB</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+  <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleC_Incoming</defName>
+        <graphicData>
+          <texPath>Buildings/Shuttles/ShuttleC</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerIncomingBase">
+        <defName>ShuttleD_Incoming</defName>
+        <graphicData>
+          <texPath>Buildings/Shuttles/ShuttleD</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleB_Leaving</defName>
+        <graphicData>
+          <texPath>Buildings/Shuttles/ShuttleB</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleC_Leaving</defName>
+        <graphicData>
+          <texPath>Buildings/Shuttles/ShuttleC</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+ <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleD_Leaving</defName>
+        <graphicData>
+          <texPath>Buildings/Shuttles/ShuttleD</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+</Defs>

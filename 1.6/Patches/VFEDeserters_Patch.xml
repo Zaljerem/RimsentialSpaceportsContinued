@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Deserters</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFED_DeserterShuttle"]/building</xpath> 
+            <value>
+                <isEdifice>false</isEdifice>
+            </value>
+        </match>
+    </Operation>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Deserters</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFED_DeserterShuttle"]/fillPercent</xpath> 
+        </match>
+    </Operation>
+
+</Patch>

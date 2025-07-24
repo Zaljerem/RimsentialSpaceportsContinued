@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>Apparel_ShuttleComm</defName>
+		<label>ShuttleComm</label>
+		<description>A single-use communications unit to request dustoff by shuttlecraft.</description>
+		<graphicData>
+			<texPath>Things/Item/ShuttleComm</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	<costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>10</Steel>
+      <Silver>50</Silver>
+    </costList>
+		<recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>TransportPod</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.5</Mass>
+			<EquipDelay>1</EquipDelay>
+			<MarketValue>750</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<apparel>
+			<scoreOffset>4</scoreOffset>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<verbs>
+			<li>
+				<verbClass>Spaceports.Verb_CastCallShuttle</verbClass>
+				<label>call for dustoff</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>false</targetable>				
+				<soundCast>Spaceports_ShuttleComm</soundCast>
+			</li>
+		</verbs>	
+		<comps>			
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>1</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>use</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+			</li>	 
+		</comps>
+	</ThingDef>
+
+</Defs>

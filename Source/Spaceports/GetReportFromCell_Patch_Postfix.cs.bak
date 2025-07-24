@@ -1,0 +1,32 @@
+using HarmonyLib;
+using UnityEngine;
+using System;
+using RimWorld;
+using Verse;
+using System.Collections.Generic;
+
+namespace Spaceports;
+
+//Patch to allow the user to select a landing pad for a shuttle
+[HarmonyPatch(typeof(RoyalTitlePermitWorker_CallShuttle), "GetReportFromCell", new Type[] { typeof(IntVec3), typeof(Map), typeof(bool) })]
+public class GetReportFromCell_Patch
+{
+	public static void Postfix(IntVec3 cell, Map map, ref string __result)
+	{
+        
+        List<Thing> thingList = cell.GetThingList(map);
+        for (int index = 0; index < thingList.Count; ++index)
+        {
+            Thing thing = thingList[index];
+            if (thing.def == ThingDefOf.Spaceports_ShuttleLandingPad)
+            {
+                __result = null;
+                return __result;
+            }            
+                
+        }
+
+		return __result;
+
+	}
+}
