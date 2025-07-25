@@ -1,0 +1,25 @@
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/IncidentDef[defName="Spaceports_KesslerSyndrome" or defName="Spaceports_TraderShuttleArrival" or defName="Spaceports_VisitorShuttleArrival" or defName="Spaceports_ShuttleMedevac" or defName="Spaceports_MedevacReward" or defName="Spaceports_InterstellarDerelict" or defName="Spaceports_MysteryCargo" or defName="Spaceports_PrisonerTransfer" or defName="Spaceports_SpicyPawnLending"]/layerWhitelist</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/IncidentDef[defName="Spaceports_KesslerSyndrome" or defName="Spaceports_TraderShuttleArrival" or defName="Spaceports_VisitorShuttleArrival" or defName="Spaceports_ShuttleMedevac" or defName="Spaceports_MedevacReward" or defName="Spaceports_InterstellarDerelict" or defName="Spaceports_MysteryCargo" or defName="Spaceports_PrisonerTransfer" or defName="Spaceports_SpicyPawnLending"]</xpath>
+            <value>
+                <layerWhitelist />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/IncidentDef[defName="Spaceports_KesslerSyndrome" or defName="Spaceports_TraderShuttleArrival" or defName="Spaceports_VisitorShuttleArrival" or defName="Spaceports_ShuttleMedevac" or defName="Spaceports_MedevacReward" or defName="Spaceports_InterstellarDerelict" or defName="Spaceports_MysteryCargo" or defName="Spaceports_PrisonerTransfer" or defName="Spaceports_SpicyPawnLending"]/layerWhitelist</xpath>
+        <value>
+            <li>Surface</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/IncidentDef[defName="Spaceports_KesslerSyndrome" or defName="Spaceports_TraderShuttleArrival" or defName="Spaceports_VisitorShuttleArrival" or defName="Spaceports_ShuttleMedevac" or defName="Spaceports_MedevacReward" or defName="Spaceports_InterstellarDerelict" or defName="Spaceports_MysteryCargo" or defName="Spaceports_PrisonerTransfer" or defName="Spaceports_SpicyPawnLending"]/layerWhitelist</xpath>
+        <value>
+            <li>Orbit</li>
+        </value>
+    </Operation>
+</Patch>

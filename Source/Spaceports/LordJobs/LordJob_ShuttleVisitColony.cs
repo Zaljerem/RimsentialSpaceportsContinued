@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using Spaceports.LordToils;
 using System.Collections.Generic;
+using Spaceports.Triggers;
 using Verse;
 using Verse.AI;
 using Verse.AI.Group;
@@ -67,7 +68,7 @@ namespace Spaceports.LordJobs
             Transition transition2 = new Transition(lordToil, lordToil_ExitMap);
             transition2.AddSources(lordToil_DefendPoint, lordToil_TakeWoundedGuest);
             transition2.AddSources(exitSubgraph.lordToils);
-            transition2.AddTrigger(new Trigger_PawnCannotReachMapEdge());
+            transition2.AddTrigger(new Trigger_PawnCannotReachMapEdgeExceptOrbitExceptOrbit());
             if (faction != null)
             {
                 transition2.AddPreAction(new TransitionAction_Message("MessageVisitorsTrappedLeaving".Translate(faction.def.pawnsPlural.CapitalizeFirst(), faction.Name)));
