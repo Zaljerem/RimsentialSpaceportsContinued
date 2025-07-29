@@ -5,6 +5,7 @@ using System.Linq;
 using Verse;
 using Verse.AI.Group;
 using LudeonTK;
+using Spaceports.LordJobs;
 
 namespace Spaceports
 {
@@ -464,6 +465,31 @@ namespace Spaceports
                 Log.Message(t.ToString());
             }
         }
+        
+        public static Lord CallForNewShuttle(Map map, List<Pawn> pawns, Lord lord, out TransportShip ship)
+        {
+            ship = null;
+            if (!Utils.CheckIfClearForLanding(lord.Map, 2)) return null;
 
+            // Log the shuttle request
+            if (lord.faction != null)
+            {
+                Messages.Message("Visitors from " + lord.faction.Name + " are calling for a new shuttle to pick them up because their ship has left or was destroyed.", MessageTypeDefOf.NeutralEvent);
+            }
+            else
+            {
+                Messages.Message("Visitors are calling for a new shuttle to pick them up because their ship has left or was destroyed.", MessageTypeDefOf.NeutralEvent);
+            }
+            
+            
+            IntVec3 pad = FindValidSpaceportPad(map, lord.faction, 2);
+            ship = GenerateInboundShuttle(pawns, pad, map, rescue:true);
+        
+            lord.RemoveAllPawns();
+            lord.Map.lordManager.RemoveLord(lord);
+            
+            LordJob lordJob = new LordJob_ShuttleVisitColony(lord.faction, Utils.GetBestChillspot(map, pad, 2), shuttle: ship.shipThing);
+            return LordMaker.MakeNewLord(lord.faction, lordJob, map, pawns);
+        }
     }
 }

@@ -36,46 +36,19 @@ namespace Spaceports.LordJobs
             { 
                 Utils.VerifyRequiredPawns(this.lord, this.shuttle);
             }
-
+            
             if (Find.TickManager.TicksGame % GenDate.TicksPerHour == 0)
             {
                 // Check if we're on an orbital map and the shuttle is null or destroyed
                 if ((shuttle == null || shuttle.Destroyed) && !lord.Map.TileInfo.OnSurface)
                 {
                     // Call for a new shuttle
-                    CallForNewShuttle();
+                    lord = Utils.CallForNewShuttle(Map, lord.ownedPawns, lord, out TransportShip ship);
+                    shuttle = ship.shipThing;
+
                 }
             }
         }
-
-        private void CallForNewShuttle()
-        {
-            if (!Utils.CheckIfClearForLanding(lord.Map, 2))
-
-            // Log the shuttle request
-            if (faction != null)
-            {
-                Messages.Message("Visitors from " + faction.Name + " are calling for a new shuttle to pick them up because their ship has left or was destroyed.", MessageTypeDefOf.NeutralEvent);
-            }
-            else
-            {
-                Messages.Message("Visitors are calling for a new shuttle to pick them up because their ship has left or was destroyed.", MessageTypeDefOf.NeutralEvent);
-            }
-            
-            Map map = lord.Map;
-            List<Pawn> pawns = lord.ownedPawns.ToList();
-            
-            IntVec3 pad = Utils.FindValidSpaceportPad(map, faction, 2);
-            TransportShip ship = Utils.GenerateInboundShuttle(pawns, pad, map, rescue:true);
-            shuttle = ship.shipThing;
-
-            lord.RemoveAllPawns();
-            lord.Map.lordManager.RemoveLord(lord);
-            
-            LordJob lordJob = new LordJob_ShuttleVisitColony(faction, Utils.GetBestChillspot(map, pad, 2), shuttle: ship.shipThing);
-            lord = LordMaker.MakeNewLord(faction, lordJob, map, pawns);
-        }
-
 
         public override StateGraph CreateGraph()
         {
