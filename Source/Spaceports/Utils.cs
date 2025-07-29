@@ -54,7 +54,15 @@ namespace Spaceports
         //Generates an inbound shuttle of random appearance and sets up its job queue
         //Required arguments: List of passenger pawns, target cell and map
         //Optional arguments: a specific TransportShipDef to use, whether or not the shuttle should ever leave, whether to just dump cargo and bounce
-        public static TransportShip GenerateInboundShuttle(List<Pawn> pawns, IntVec3 padCell, Map map, List<Thing> items = null, TransportShipDef forcedType = null, bool canLeave = true, bool dropAndGo = false)
+        public static TransportShip GenerateInboundShuttle(
+            List<Pawn> pawns,
+            IntVec3 padCell, 
+            Map map, 
+            List<Thing> items = null,
+            TransportShipDef forcedType = null, 
+            bool canLeave = true,
+            bool dropAndGo = false,
+            bool rescue = false)
         {
             BiomeDef outerSpaceBiome = DefDatabase<BiomeDef>.GetNamedSilentFail("OuterSpaceBiome");
             BiomeDef odysseySpaceBiome = DefDatabase<BiomeDef>.GetNamedSilentFail("Space");
@@ -65,7 +73,7 @@ namespace Spaceports
                 shuttle = TransportShipMaker.MakeTransportShip(forcedType, null);
             }
             List<Thing> checkTargets = new List<Thing>();
-            if (pawns != null)
+            if (pawns != null && !rescue)
             {
                 foreach (Pawn p in pawns)
                 {

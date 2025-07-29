@@ -23,10 +23,7 @@ namespace Spaceports.Incidents
         {
             if (!base.CanFireNowSub(parms))
             {
-                //if (!Utils.IsMapInSpace((Map)parms.target))
-                //{
-                //    return false;
-                //}
+                return false;
             }
 
             if (!LoadedModManager.GetMod<SpaceportsMod>().GetSettings<SpaceportsSettings>().regularVisitors)
