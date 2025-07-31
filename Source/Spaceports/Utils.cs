@@ -469,7 +469,7 @@ namespace Spaceports
         public static Lord CallForNewShuttle(Map map, List<Pawn> pawns, Lord lord, out TransportShip ship)
         {
             ship = null;
-            if (!Utils.CheckIfClearForLanding(lord.Map, 2)) return null;
+            if (!CheckIfClearForLanding(map, 2)) return null;
 
             // Log the shuttle request
             if (lord.faction != null)
@@ -486,7 +486,7 @@ namespace Spaceports
             ship = GenerateInboundShuttle(pawns, pad, map, rescue:true);
         
             lord.RemoveAllPawns();
-            lord.Map.lordManager.RemoveLord(lord);
+            map.lordManager.RemoveLord(lord);
             
             LordJob lordJob = new LordJob_ShuttleVisitColony(lord.faction, Utils.GetBestChillspot(map, pad, 2), shuttle: ship.shipThing);
             return LordMaker.MakeNewLord(lord.faction, lordJob, map, pawns);
