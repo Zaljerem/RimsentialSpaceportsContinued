@@ -18,6 +18,7 @@
         <targetTags>
           <li>World</li>
         </targetTags>
+        <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
         <workerClass>IncidentWorker_MakeGameCondition</workerClass>
         <gameCondition>Spaceports_KesslerSyndrome</gameCondition>
         <letterLabel>Kessler syndrome</letterLabel>

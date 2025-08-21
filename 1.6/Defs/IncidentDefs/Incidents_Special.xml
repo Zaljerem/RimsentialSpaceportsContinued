@@ -10,6 +10,7 @@
         <letterDef>Spaceports_ShuttleMedevac</letterDef>
         <letterLabel>Shuttle medevac</letterLabel>
         <baseChance>1.0</baseChance>
+      <requireColonistsPresent>False</requireColonistsPresent>
         <minRefireDays>60</minRefireDays>
     </IncidentDef>
 
@@ -22,6 +23,7 @@
         </targetTags>
         <workerClass>Spaceports.Incidents.IncidentWorker_ShuttleMedevacReward</workerClass>
         <baseChance>0</baseChance>
+      <requireColonistsPresent>False</requireColonistsPresent>
       </IncidentDef>
       
       <IncidentDef>
@@ -35,6 +37,7 @@
         <letterDef>Spaceports_InterstellarDerelict</letterDef>
         <letterLabel>Interstellar derelict</letterLabel>
         <baseChance>1.0</baseChance>
+        <requireColonistsPresent>False</requireColonistsPresent>
         <minRefireDays>60</minRefireDays>
     </IncidentDef>
 
@@ -49,6 +52,7 @@
       <letterDef>Spaceports_MysteryCargo</letterDef>
       <letterLabel>Mysterious cargo</letterLabel>
       <baseChance>1.0</baseChance>
+      <requireColonistsPresent>False</requireColonistsPresent>
       <minRefireDays>60</minRefireDays>
   </IncidentDef>
 
@@ -63,6 +67,7 @@
     <letterDef>Spaceports_PrisonerTransfer</letterDef>
     <letterLabel>Prisoner transfer</letterLabel>
     <baseChance>1.0</baseChance>
+    <requireColonistsPresent>False</requireColonistsPresent>
     <minRefireDays>60</minRefireDays>
 </IncidentDef>
 
@@ -77,6 +82,7 @@
   <letterDef>Spaceports_SpicyPawnLending</letterDef>
   <letterLabel>Professional help needed</letterLabel>
   <baseChance>0</baseChance>
+  <requireColonistsPresent>False</requireColonistsPresent>
   <minRefireDays>60</minRefireDays>
 </IncidentDef>
 </Defs>
