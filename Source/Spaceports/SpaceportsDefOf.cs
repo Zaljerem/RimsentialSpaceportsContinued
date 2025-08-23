@@ -32,6 +32,8 @@ namespace Spaceports
         public static JobDef Spaceports_Kidnap;
 
         public static ThoughtDef Spaceports_PsychicCharge;
+
+        public static DutyDef Spaceports_ColonistLeftBehind;
     }
 
     [StaticConstructorOnStartup]

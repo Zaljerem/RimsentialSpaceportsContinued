@@ -20,8 +20,8 @@ namespace Spaceports
         public static ThingDef ShuttleA_Crashing;
         public static ThingDef Spaceports_RoyaltyShuttle;
         public static ThingDef Shuttle;
-        public static ThingDef Spaceports_Shrapnel;    
-        
+        public static ThingDef Spaceports_Shrapnel;
+
 
         public static IncidentDef Spaceports_VisitorShuttleArrival;
         public static IncidentDef Spaceports_TraderShuttleArrival;

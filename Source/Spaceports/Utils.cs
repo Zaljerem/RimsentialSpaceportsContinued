@@ -5,6 +5,7 @@ using System.Linq;
 using Verse;
 using Verse.AI.Group;
 using LudeonTK;
+using Spaceports.LordJobs;
 
 namespace Spaceports
 {
@@ -54,7 +55,15 @@ namespace Spaceports
         //Generates an inbound shuttle of random appearance and sets up its job queue
         //Required arguments: List of passenger pawns, target cell and map
         //Optional arguments: a specific TransportShipDef to use, whether or not the shuttle should ever leave, whether to just dump cargo and bounce
-        public static TransportShip GenerateInboundShuttle(List<Pawn> pawns, IntVec3 padCell, Map map, List<Thing> items = null, TransportShipDef forcedType = null, bool canLeave = true, bool dropAndGo = false)
+        public static TransportShip GenerateInboundShuttle(
+            List<Pawn> pawns,
+            IntVec3 padCell, 
+            Map map, 
+            List<Thing> items = null,
+            TransportShipDef forcedType = null, 
+            bool canLeave = true,
+            bool dropAndGo = false,
+            bool rescue = false)
         {
             BiomeDef outerSpaceBiome = DefDatabase<BiomeDef>.GetNamedSilentFail("OuterSpaceBiome");
             BiomeDef odysseySpaceBiome = DefDatabase<BiomeDef>.GetNamedSilentFail("Space");
@@ -65,7 +74,7 @@ namespace Spaceports
                 shuttle = TransportShipMaker.MakeTransportShip(forcedType, null);
             }
             List<Thing> checkTargets = new List<Thing>();
-            if (pawns != null)
+            if (pawns != null && !rescue)
             {
                 foreach (Pawn p in pawns)
                 {
@@ -456,6 +465,31 @@ namespace Spaceports
                 Log.Message(t.ToString());
             }
         }
+        
+        public static Lord CallForNewShuttle(Map map, List<Pawn> pawns, Lord lord, out TransportShip ship)
+        {
+            ship = null;
+            if (!CheckIfClearForLanding(map, 2)) return null;
 
+            // Log the shuttle request
+            if (lord.faction != null)
+            {
+                Messages.Message("Visitors from " + lord.faction.Name + " are calling for a new shuttle to pick them up because their ship has left or was destroyed.", MessageTypeDefOf.NeutralEvent);
+            }
+            else
+            {
+                Messages.Message("Visitors are calling for a new shuttle to pick them up because their ship has left or was destroyed.", MessageTypeDefOf.NeutralEvent);
+            }
+            
+            
+            IntVec3 pad = FindValidSpaceportPad(map, lord.faction, 2);
+            ship = GenerateInboundShuttle(pawns, pad, map, rescue:true);
+        
+            lord.RemoveAllPawns();
+            map.lordManager.RemoveLord(lord);
+            
+            LordJob lordJob = new LordJob_ShuttleVisitColony(lord.faction, Utils.GetBestChillspot(map, pad, 2), shuttle: ship.shipThing);
+            return LordMaker.MakeNewLord(lord.faction, lordJob, map, pawns);
+        }
     }
 }

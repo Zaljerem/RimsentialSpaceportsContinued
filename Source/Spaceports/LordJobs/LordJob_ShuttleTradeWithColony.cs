@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using Spaceports.LordToils;
 using System.Collections.Generic;
+using Spaceports.Triggers;
 using Verse;
 using Verse.AI;
 using Verse.AI.Group;
@@ -29,7 +30,19 @@ namespace Spaceports.LordJobs
         public override void LordJobTick()
         {
             base.LordJobTick();
-            if (Find.TickManager.TicksGame % 250 == 0) { Utils.VerifyRequiredPawns(this.lord, this.shuttle); }
+            if (Find.TickManager.TicksGame % 250 == 0) { Utils.VerifyRequiredPawns(lord, shuttle); }
+            
+            if (Find.TickManager.TicksGame % GenDate.TicksPerHour == 0)
+            {
+                // Check if we're on an orbital map and the shuttle is null or destroyed
+                if ((shuttle == null || shuttle.Destroyed) && !lord.Map.TileInfo.OnSurface)
+                {
+                    // Call for a new shuttle
+                    lord = Utils.CallForNewShuttle(Map, lord.ownedPawns, lord, out TransportShip ship);
+                    shuttle = ship.shipThing;
+
+                }
+            }
         }
 
         public override StateGraph CreateGraph()
@@ -60,7 +73,7 @@ namespace Spaceports.LordJobs
 
             Transition transition2 = new Transition(lordToil_Travel, lordToil_ExitMap2);
             transition2.AddSources(lordToil_DefendTraderCaravan, lordToil_DefendTraderCaravan2, lordToil_ExitMapAndEscortCarriers, lordToil_ExitMap, lordToil_ExitMapTraderFighting);
-            transition2.AddTrigger(new Trigger_PawnCannotReachMapEdge());
+            transition2.AddTrigger(new Trigger_PawnCannotReachMapEdgeExceptOrbitExceptOrbit());
             transition2.AddPostAction(new TransitionAction_Message("MessageVisitorsTrappedLeaving".Translate(faction.def.pawnsPlural.CapitalizeFirst(), faction.Name)));
             transition2.AddPostAction(new TransitionAction_WakeAll());
             transition2.AddPostAction(new TransitionAction_EndAllJobs());

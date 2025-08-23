@@ -10,6 +10,7 @@
     <category>FactionArrival</category>
     <baseChance>0</baseChance>
     <requireColonistsPresent>False</requireColonistsPresent>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
   </IncidentDef>
   
   <IncidentDef>
@@ -21,6 +22,7 @@
     <workerClass>Spaceports.Incidents.IncidentWorker_VisitorShuttleArrival</workerClass>
     <category>FactionArrival</category>
     <baseChance>0</baseChance>
+    <requireColonistsPresent>False</requireColonistsPresent>
     <pointsScaleable>true</pointsScaleable>
     <requireColonistsPresent>False</requireColonistsPresent>
   </IncidentDef>

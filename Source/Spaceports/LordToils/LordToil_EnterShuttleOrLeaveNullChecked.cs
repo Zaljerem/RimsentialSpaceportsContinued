@@ -32,15 +32,11 @@ namespace Spaceports.LordToils
 
 		private DutyDef GetExpectedDutyDef(Pawn pawn)
 		{
-			if(pawn != null && shuttle != null)
-            {
-				if (!shuttle.Spawned || !pawn.CanReach(shuttle, PathEndMode.Touch, Danger.Deadly))
-				{
-					return DutyDefOf.ExitMapBestAndDefendSelf;
-				}
-				return DutyDefOf.EnterTransporterAndDefendSelf;
+			if (shuttle == null || pawn == null || !shuttle.Spawned || !pawn.CanReach(shuttle, PathEndMode.Touch, Danger.Deadly))
+			{
+				return SpaceportsDefOf.Spaceports_ColonistLeftBehind;
 			}
-			return DutyDefOf.ExitMapBestAndDefendSelf;
+			return DutyDefOf.EnterTransporterAndDefendSelf;
 		}
 
 		private void EnsureCorrectDuties()

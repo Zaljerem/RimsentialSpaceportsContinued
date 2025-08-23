@@ -3,6 +3,9 @@
     <AssemblyName>SharpUtils</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net48</TargetFramework>
+    <OutputPath>../../1.6/Assemblies</OutputPath>
+    <OutputType>Library</OutputType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
@@ -11,15 +14,18 @@
   <PropertyGroup />
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\Assembly-CSharp.dll')">..\..\..\..\..\Users\conse\Desktop\!16\Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll')">../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.dll')">..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.dll</HintPath>
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll')">../../../../RimWorldWin64_Data/Managed/UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.CoreModule.dll')">..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll')">../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
