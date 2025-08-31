@@ -64,40 +64,55 @@ namespace Spaceports
                 Log.Message("[Spaceports] Hospitality not found, patches bypassed.");
             }
 
-            if (Verse.ModLister.HasActiveModWithName("Save Our Ship 2") && Verse.ModLister.HasActiveModWithName("Hospitality (Continued)")) //Conditional integration patches with SOS2/Hosp
-            {
-                Harmony harmony = new Harmony("Spaceports_Hospitality_SOS2_Bridge");
-                Log.Message("[Spaceports] Hospitality and SOS2 FOUND, attempting integration patch...");
-                var mOriginalA = AccessTools.Method("Hospitality.ItemUtility:PocketHeadgear");
-                var mPrefixA = typeof(SpaceportsHarmony).GetMethod("PocketHeadgearPrefix");
-                var mOriginalB = AccessTools.Method("Hospitality.IncidentWorker_VisitorGroup:FactionCanBeGroupSource");
-                var mPostfixB = typeof(SpaceportsHarmony).GetMethod("FactionCanBeGroupSourcePostfix");
-                var mOriginalC = AccessTools.Method("Hospitality.IncidentWorker_VisitorGroup:CheckCanCome");
-                var mPostfixC = typeof(SpaceportsHarmony).GetMethod("CheckCanComePostfix");
+           // if (Verse.ModLister.OdysseyInstalled && Verse.ModLister.HasActiveModWithName("Hospitality (Continued)")) //Conditional integration patches with SOS2/Hosp
+           // {
+           //     Harmony harmony = new Harmony("Spaceports_Hospitality_Odyssey_Bridge");
+           //     Log.Message("[Spaceports] Hospitality and Odyssey FOUND, attempting integration patch...");
+            //    var mOriginalOA = AccessTools.Method("Hospitality.ItemUtility:PocketHeadgear");
+            //    var mPrefixOA = typeof(SpaceportsHarmony).GetMethod("PocketHeadgearPrefix");
+            //    if (mOriginalOA != null)
+            //    {
+            //        var patch = new HarmonyMethod(mPrefixOA);
+            //        Log.Message("[Spaceports] Attempting to prefix Hospitality.ItemUtility.PocketHeadgear...");
+            //        harmony.Patch(mOriginalOA, prefix: patch);
+            //    }
 
-                if (mOriginalA != null)
-                {
-                    var patch = new HarmonyMethod(mPrefixA);
-                    Log.Message("[Spaceports] Attempting to prefix Hospitality.ItemUtility.PocketHeadgear...");
-                    harmony.Patch(mOriginalA, prefix: patch);
-                }
-                if (mOriginalB != null)
-                {
-                    var patch = new HarmonyMethod(mPostfixB);
-                    Log.Message("[Spaceports] Attempting to postfix Hospitality.IncidentWorker_VisitorGroup.FactionCanBeGroupSource...");
-                    harmony.Patch(mOriginalB, postfix: patch);
-                }
-                if (mOriginalC != null)
-                {
-                    var patch = new HarmonyMethod(mPostfixC);
-                    Log.Message("[Spaceports] Attempting to postfix Hospitality.IncidentWorker_VisitorGroup.CheckCanCome...");
-                    harmony.Patch(mOriginalC, postfix: patch);
-                }
-            }
-            else
-            {
-                Log.Message("[Spaceports] Hospitality + SOS2 not found, integration patches bypassed.");
-            }
+           // }
+
+           //   if (Verse.ModLister.HasActiveModWithName("Save Our Ship 2") && Verse.ModLister.HasActiveModWithName("Hospitality (Continued)")) //Conditional integration patches with SOS2/Hosp
+           // {
+           //     Harmony harmony = new Harmony("Spaceports_Hospitality_SOS2_Bridge");
+           //     Log.Message("[Spaceports] Hospitality and SOS2 FOUND, attempting integration patch...");
+                //var mOriginalA = AccessTools.Method("Hospitality.ItemUtility:PocketHeadgear");
+                //var mPrefixA = typeof(SpaceportsHarmony).GetMethod("PocketHeadgearPrefix");
+             //   var mOriginalB = AccessTools.Method("Hospitality.IncidentWorker_VisitorGroup:FactionCanBeGroupSource");
+              //  var mPostfixB = typeof(SpaceportsHarmony).GetMethod("FactionCanBeGroupSourcePostfix");
+             //   var mOriginalC = AccessTools.Method("Hospitality.IncidentWorker_VisitorGroup:CheckCanCome");
+             //   var mPostfixC = typeof(SpaceportsHarmony).GetMethod("CheckCanComePostfix");
+
+                //if (mOriginalA != null && !Verse.ModLister.OdysseyInstalled)
+               //{
+               //     var patch = new HarmonyMethod(mPrefixA);
+               //     Log.Message("[Spaceports] Attempting to prefix Hospitality.ItemUtility.PocketHeadgear...");
+               //     harmony.Patch(mOriginalA, prefix: patch);
+               // }
+              //  if (mOriginalB != null)
+             //   {
+             //       var patch = new HarmonyMethod(mPostfixB);
+             //       Log.Message("[Spaceports] Attempting to postfix Hospitality.IncidentWorker_VisitorGroup.FactionCanBeGroupSource...");
+             //       harmony.Patch(mOriginalB, postfix: patch);
+             //   }
+             //   if (mOriginalC != null)
+             //   {
+             //       var patch = new HarmonyMethod(mPostfixC);
+             //       Log.Message("[Spaceports] Attempting to postfix Hospitality.IncidentWorker_VisitorGroup.CheckCanCome...");
+              //      harmony.Patch(mOriginalC, postfix: patch);
+             //   }
+          //  }
+          //  else
+          //  {
+          //      Log.Message("[Spaceports] Hospitality + SOS2 not found, integration patches bypassed.");
+          //  }
 
             //conditional patch to Trader Ships/Themis Traders (they use the same assembly under the hood LMFAOOO)
             //if (Verse.ModLister.HasActiveModWithName("Trader ships") || Verse.ModLister.HasActiveModWithName("Rim-Effect: Themis Traders"))
@@ -283,9 +298,10 @@ namespace Spaceports
             bool RetVal = true;
             if (Utils.IsMapInSpace(map))
             {
-                if (!LoadedModManager.GetMod<SpaceportsMod>().GetSettings<SpaceportsSettings>().hospitalityEnabled) { RetVal = false; }
-                if (!Utils.CheckIfClearForLanding(map, 3)) { RetVal = false; }
-                if (map.gameConditionManager.ConditionIsActive(SpaceportsDefOf.Spaceports_KesslerSyndrome)) { RetVal = false; }
+               
+                    if (!Utils.CheckIfClearForLanding(map, 3)) { RetVal = false; }
+                    if (!LoadedModManager.GetMod<SpaceportsMod>().GetSettings<SpaceportsSettings>().hospitalityEnabled) { RetVal = false; }
+                    if (map.gameConditionManager.ConditionIsActive(SpaceportsDefOf.Spaceports_KesslerSyndrome)) { RetVal = false; }
             }
 
             if (!RetVal)
@@ -296,6 +312,7 @@ namespace Spaceports
             return RetVal;
         }
 
+        //now fully addressed in Hospitality
         [HarmonyPrefix] //Hospitality/SOS2 bridge patch, stops pawns from removing their EVA helmets
         public static bool PocketHeadgearPrefix(Pawn pawn)
         {
@@ -309,6 +326,7 @@ namespace Spaceports
             return true;
         }
 
+        //Now handled for SOS2 and Odyssey in Hospitality
         [HarmonyPostfix] //Hospitality/SOS2 bridge patch, disqualifies neolithic factions from visiting space maps
         public static void FactionCanBeGroupSourcePostfix(Faction f, Map map, ref bool __result)
         {
@@ -318,6 +336,7 @@ namespace Spaceports
             }
         }
 
+        //Now handled for SOS2 and Odyssey in Hospitality
         [HarmonyPostfix] //Hospitality/SOS2 bridge patch, stops temp concerns when trying to visit a space map
         public static void CheckCanComePostfix(Map map, Faction faction, ref TaggedString reasons, ref bool __result)
         {
@@ -342,12 +361,15 @@ namespace Spaceports
         [HarmonyPostfix] //Trader Ships/Themis Traders patch
         public static void FindCloseLandingSpotPostfix(Map map, Faction faction, ref IntVec3 spot)
         {
+            //Log.Message("Trader/Spaceport Postfix fire");
             if(!Utils.CheckIfClearForLanding(map, 2))
             {
+                //Log.Message("CheckIfClearForLanding failed");
                 return;
             }
             else
             {
+                //Log.Message("Set spot to valid pad");
                 spot = Utils.FindValidSpaceportPad(map, faction, 2);
             }
             return;

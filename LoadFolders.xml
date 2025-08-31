@@ -11,6 +11,8 @@
 		<li>/</li>
 		<li>1.6</li>
 		<li IfModActive="Ludeon.Rimworld.Biotech">1.6/Compat/Biotech</li>
+		<li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Compat/Odyssey</li>
+		<li IfModActive="Ludeon.Rimworld.Anomaly,Ludeon.Rimworld.Ideology">1.6/Compat/DLC</li>
 		<li IfModActive="VanillaExpanded.VFEPropsandDecor">1.6/Compat/VEProps</li>
 		<li IfModActive="kentington.saveourship2">1.6/Compat/SOS2</li>
 	</v1.6>	

@@ -22,3 +22,4 @@
 
 1.1.1 - 6/21/2025 - minor fix in preparation for Hospitality (Continued)
 
+1.1.2 - 8/23/2025 - initial Odyssey compatibility (thanks Keyz!), fix to player shuttles landing on shuttle pads, lowered archotech shuttle creator commonality further

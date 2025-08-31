@@ -7,7 +7,7 @@
 	<li>1.5</li>
 	<li>1.6</li>
   </supportedVersions>
-<modVersion IgnoreIfNoMatchingField="True">1.1.1</modVersion>
+<modVersion IgnoreIfNoMatchingField="True">1.1.2</modVersion>
   <modDependencies>
         <li>
             <packageId>brrainz.harmony</packageId>
@@ -21,14 +21,17 @@
           <downloadUrl>https://store.steampowered.com/app/1149640/RimWorld__Royalty/?curator_clanid=25160263</downloadUrl>
         </li>
   </modDependencies>
-  <loadAfter>
-    <li>Ludeon.RimWorld.Royalty</li>
-    <li>Ludeon.RimWorld.Odyssey</li>
-    <li>OskarPotocki.VFE.Deserters</li>
-    <li>Azazellz.TransportShuttleStandalone</li>
-    <li>VanillaExpanded.VFEPropsandDecor</li>
-    <li>kentington.saveourship2</li>
-  </loadAfter>
+<loadAfter>
+ <li>Ludeon.RimWorld.Royalty</li>
+ <li>Ludeon.RimWorld.Odyssey</li>
+<li>Ludeon.RimWorld.Biotech</li>
+<li>Ludeon.RimWorld.Anomaly</li>
+<li>Ludeon.RimWorld.Ideology</li>
+<li>OskarPotocki.VFE.Deserters</li>
+<li>Azazellz.TransportShuttleStandalone</li>
+<li>VanillaExpanded.VFEPropsandDecor</li>
+<li>kentington.saveourship2</li>
+</loadAfter>
   <description>
 Original mod by SomewhereOutInSpace/Orpheusly
 https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215

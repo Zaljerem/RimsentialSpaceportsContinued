@@ -3,9 +3,6 @@
     <AssemblyName>Spaceports</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net48</TargetFramework>
-    <OutputType>Library</OutputType>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>../../1.6/Assemblies</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
@@ -14,48 +11,37 @@
   <PropertyGroup />
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\0Harmony.dll')">..\..\..\..\..\Users\conse\Desktop\!16\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\Assembly-CSharp.dll')">..\..\..\..\..\Users\conse\Desktop\!16\Assembly-CSharp.dll</HintPath>
-      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll')">../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SharpUtils">
-      <HintPath Condition="Exists('..\SharpUtils.dll')">..\SharpUtils.dll</HintPath>
-      <HintPath Condition="Exists('../../1.6/Assemblies')">../../1.6/Assemblies/SharpUtils.dll</HintPath>
+      <HintPath>..\SharpUtils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.dll')">..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.dll</HintPath>
-      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll')">../../../../RimWorldWin64_Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.CoreModule.dll')">..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.CoreModule.dll</HintPath>
-      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll')">../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.IMGUIModule.dll')">..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.IMGUIModule.dll</HintPath>
-      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/UnityEngine.IMGUIModule.dll')">../../../../RimWorldWin64_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.InputLegacyModule.dll')">..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.InputLegacyModule.dll</HintPath>
-      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/UnityEngine.InputLegacyModule.dll')">../../../../RimWorldWin64_Data/Managed/UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.InputLegacyModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath Condition="Exists('..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.TextRenderingModule.dll')">..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.TextRenderingModule.dll</HintPath>
-      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/UnityEngine.TextRenderingModule.dll')">../../../../RimWorldWin64_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\Users\conse\Desktop\!16\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime" />
   </ItemGroup>
   <ItemGroup>
     <Reference Update="System">

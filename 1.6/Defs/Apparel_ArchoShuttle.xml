@@ -16,7 +16,8 @@
 		 <thingSetMakerTags>
       			<li>RewardStandardMidFreq</li>
     		</thingSetMakerTags>
-		<generateCommonality>0.1</generateCommonality>
+		<generateCommonality>0.001</generateCommonality>
+		<generateAllowChance>0.1</generateAllowChance>
 		<statBases>			
 			<Mass>0.5</Mass>
 			<EquipDelay>1</EquipDelay>
