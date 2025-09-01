@@ -31,7 +31,8 @@
     </costList>
     <building>
       <ai_chillDestination>false</ai_chillDestination>
-      <destroySound>BuildingDestroyed_Metal_Big</destroySound>	
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+	<isEdifice>false</isEdifice>	
     </building>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <researchPrerequisites>
