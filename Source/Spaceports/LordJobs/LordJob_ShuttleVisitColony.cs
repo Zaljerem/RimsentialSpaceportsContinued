@@ -21,6 +21,9 @@ namespace Spaceports.LordJobs
 
         public StateGraph exitSubgraph;
 
+        // Only for scribing
+        private LordJob_ShuttleVisitColony() { }
+
         public LordJob_ShuttleVisitColony(Faction faction, IntVec3 chillSpot, Thing shuttle, int? durationTicks = null)
         {
             this.faction = faction;
