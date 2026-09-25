@@ -207,6 +207,7 @@
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Hospitality</li>
+						<li>Hospitality (Continued)</li>
                     </mods>
                     <match Class="PatchOperationAdd">
                         <xpath>/Defs/IncidentDef[defName="VisitorGroup"]/targetTags</xpath> 

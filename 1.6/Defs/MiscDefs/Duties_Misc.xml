@@ -15,6 +15,17 @@
     </thinkNode>
   </DutyDef>
 
+  <DutyDef>
+    <defName>Spaceports_ColonistLeftBehind</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>        
+        <li Class="JobGiver_Idle">        
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+
   <!--<DutyDef>
     <defName>Spaceports_EnterTransporterAndDefendSelf</defName>
     <thinkNode Class="ThinkNode_Priority">
@@ -27,5 +38,8 @@
       </subNodes>
     </thinkNode>
   </DutyDef>-->
+
+
+
 
 </Defs>
